@@ -21,3 +21,8 @@ git fetch
 
 git pull 
 fait un fetch puis un merge
+
+--
+modif de historique sur dépot distant
+git fetch 
+git merge
