@@ -22,6 +22,7 @@ git fetch
 git pull 
 fait un fetch puis un merge
 
+<<<<<<< HEAD
 ----------------------------------------------------------
 Que se passe-t-il si on fait un fetch, 
 sans faire de merge, 
@@ -47,3 +48,9 @@ aucune modification ajoutée à la validation
 
 On peut faire un git merge ou un git rebase... 
 git pull fait par défaut fetch et merge, mais cela peut introduire un travail pas propre... 
+=======
+--
+modif de historique sur dépot distant
+git fetch 
+git merge
+>>>>>>> e31c228336465a0b3718b088971dba3f09e1c9c3
