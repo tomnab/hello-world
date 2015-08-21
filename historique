@@ -21,3 +21,29 @@ git fetch
 
 git pull 
 fait un fetch puis un merge
+
+----------------------------------------------------------
+Que se passe-t-il si on fait un fetch, 
+sans faire de merge, 
+puis qu'on modifie un fichier, et qu'on essaie de commiter ?
+
+tom@tomXPS13:~/Bureau/dev/git/hello-world$ git status
+Sur la branche master
+Votre branche est en retard sur 'origin/master' de 1 commit, et peut être mise à jour en avance rapide.
+  (utilisez "git pull" pour mettre à jour votre branche locale)
+
+rien à valider, la copie de travail est propre
+tom@tomXPS13:~/Bureau/dev/git/hello-world$ git commit -m "essai avec modif apres un fetch sans merge"
+Sur la branche master
+Votre branche est en retard sur 'origin/master' de 1 commit, et peut être mise à jour en avance rapide.
+  (utilisez "git pull" pour mettre à jour votre branche locale)
+
+Modifications qui ne seront pas validées :
+	modifié:         historique
+
+aucune modification ajoutée à la validation
+ 
+--------------------------------------------------------------
+
+On peut faire un git merge ou un git rebase... 
+git pull fait par défaut fetch et merge, mais cela peut introduire un travail pas propre... 
