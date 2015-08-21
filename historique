@@ -1,0 +1,23 @@
+Ajout des fichiers cheatsheet et Readme
+git add github-git-cheat-sheet.pdf 
+git add README.md
+
+
+git status permet de connaitre les différences avec la branche précédente et les fichiers à commiter
+
+git commit -m "insertion de deux fichiers"
+Permet de commiter localement les modifs ce qui déclenche une nouvelle version et avance dans l'historique
+
+git push 
+Renvoie les fichiers vers le dépot distant 
+
+(git push nom_du_depot nom_de_la_branche)
+
+On modifie des trucs en ligne dans dépôt distant...
+
+Puis on récupère les modifs en local 
+git fetch
+=> pas de merge encore donc modifs invisibles; mais permet d'interroger l'état du dépot distant par rapport au dépot local
+
+git pull 
+fait un fetch puis un merge
